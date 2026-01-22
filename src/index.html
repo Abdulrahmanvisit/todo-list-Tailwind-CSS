@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <style>
+      /* Add completed style */
+      .completed span {
+        text-decoration: line-through;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body
+    class="font-sans bg-[#121212] text-white flex justify-center items-center h-screen"
+  >
+    <div class="bg-[#1e1e1e] p-5 rounded-lg w-80 shadow-lg">
+      <h1 class="text-center mb-5 text-2xl">To-Do List</h1>
+      <div class="flex gap-2 mb-5">
+        <input
+          id="todo-input"
+          type="text"
+          class="flex-1 px-3 py-2 bg-[#333] rounded-md text-white outline-none"
+          placeholder="add a new task..."
+        />
+        <button
+          id="add-task-btn"
+          class="px-4 py-2 bg-[#6200ea] rounded-md text-white hover:bg-[#3700b3] transition-colors"
+        >
+          Add Task
+        </button>
+      </div>
+      <ul id="todo-list" class="list-none"></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
